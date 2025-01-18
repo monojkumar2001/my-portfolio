@@ -8,6 +8,7 @@ import "swiper/modules/pagination/pagination.min.css";
 import { Mousewheel, Pagination } from "swiper";
 // typed
 import Typed from "react-typed";
+import Projects from "./Projects";
 function Home() {
   // States
   const [activeFaq, setActiveFaq] = useState();
@@ -22,7 +23,7 @@ function Home() {
   const pagination = {
     clickable: true,
     renderBullet: (index, className) => {
-      const texts = ["Home", "About", "Skills", "Projects", "Contact Us"];
+      const texts = ["Home", "About", "Skills", "Projects", "Contact Me"];
       return `<span class="${className}">${texts[index]}</span>`;
     },
   };
@@ -54,7 +55,7 @@ function Home() {
                   <h1 className="section-title">
                     <Typed
                       strings={[
-                        `Hi, I'm Monoj Kumar! Full Stack Developer Specializing in Laravel and React. `,
+                        `Hi, This is Monoj Kumar! Full Stack Developer Specializing in Laravel and React. `,
                       ]}
                       typeSpeed={120}
                       backSpeed={50}
@@ -82,58 +83,30 @@ function Home() {
                 </div>
               </div>
               <div className="social-link-item">
-                <a href="https://pentonium.medium.com/" target={"_blank"}>
-                  <img src="./images/medium.png" alt="" />
+                <a
+                  href="https://www.facebook.com/monojkumar202"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/facebook.png" alt="" />
                 </a>
-                <a href="https://twitter.com/pentonium_ptm" target={"_blank"}>
-                  <img src="./images/twitter-logo.png" alt="" />
+                <a
+                  href="https://www.linkedin.com/in/monojkumar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/linkedin.png" alt="" />
                 </a>
-                <a href="" target={"_blank"}>
-                  <img src="./images/discord-logo.png" alt="" />
+                <a
+                  href="https://wa.me/8801757859893"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/whatsapp.png" alt="" />
                 </a>
               </div>
             </section>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <section className="talent-tool cpt-6 section-bg">
-              <div className="page-bg-2 page-bg"></div>
-              <div className="talent-tool-wrapper">
-                <div className="talent-tool-con">
-                  <div className="talent-item talent-item-1 talent-item-box">
-                    <img src="./images/talent-img-1.png" alt="" />
-                    <div className="talent-content">
-                      <p>
-                        Discover the right candidate from a big pool of talent
-                        marketplace.{" "}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="talent-item talent-item-2 ">
-                    <img src="./images/talent-img-2.png" alt="" />
-                  </div>
-                  <div className="talent-item talent-item-3 talent-item-box">
-                    <img src="./images/talent-img-3.png" alt="" />
-                    <div className="talent-content">
-                      <p>
-                        Collect SBTs as badges and achievements to get
-                        recognized among the peers.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="talent-item-buttom talent-item talent-item-4 ">
-                  <img src="./images/talent-img-4.png" alt="" />
-                  <div className="talent-content">
-                    <p>
-                      Collect SBTs as badges and achievements to get recognized
-                      among the peers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </SwiperSlide> */}
-
           <SwiperSlide>
             {/* =================== virtual-office start ================== */}
             <section className="virtual-office cpb-6 section-bg">
@@ -169,24 +142,7 @@ function Home() {
             {/* ================= Remote Job Start ==================== */}
             <section className="remote section-bg">
               <div className="page-bg-4 page-bg"></div>
-              {/* <div className="remote-job-wrapper">
-                <div className="remote-content">
-                  <h2>
-                    remote <span>job</span>{" "}
-                  </h2>
-                  <p>
-                    Build your business without an office has never been so
-                    easy, offering tools to monitor and engage remote employees
-                    with an extended form of autonomous agreement protocol,
-                    saving money and offering transparency at the same time.{" "}
-                  </p>
-                </div>
-                <div className="remote-job-img ">
-                  <div className="remote-job-imgs">
-                    <img src="./images/remote-job-img-2.png" alt="" />
-                  </div>
-                </div>
-              </div> */}
+
               <div className="container">
                 <div className="skill-wrapper">
                   <div className="community-title">
@@ -195,9 +151,40 @@ function Home() {
                     </h1>
                   </div>
 
-                  <div className="skill-content">
-                    <h4>FRONT-END </h4>
+                  <div className="skill-content skill-content-1">
+                    <h4>
+                      <span>FRONT-END</span>
+                    </h4>
                     <div className="skill-items">
+                      <div className="skill-item">
+                        <img
+                          src="./images/html.svg"
+                          alt=""
+                          className="skill-icon-img"
+                        />
+                      </div>
+                      <div className="skill-item">
+                        <img
+                          src="./images/css.svg"
+                          alt=""
+                          className="skill-icon-img"
+                        />
+                      </div>
+                      <div className="skill-item">
+                        <img
+                          src="./images/bootstrap.svg"
+                          alt=""
+                          className="skill-icon-img"
+                        />
+                      </div>
+
+                      <div className="skill-item">
+                        <img
+                          src="./images/tailwind.svg"
+                          alt=""
+                          className="skill-icon-img"
+                        />
+                      </div>
                       <div className="skill-item">
                         <img
                           src="./images/javascript.svg"
@@ -233,40 +220,12 @@ function Home() {
                           className="skill-icon-img"
                         />
                       </div>
-
-                      <div className="skill-item">
-                        <img
-                          src="./images/html.svg"
-                          alt=""
-                          className="skill-icon-img"
-                        />
-                      </div>
-                      <div className="skill-item">
-                        <img
-                          src="./images/css.svg"
-                          alt=""
-                          className="skill-icon-img"
-                        />
-                      </div>
-                      <div className="skill-item">
-                        <img
-                          src="./images/bootstrap.svg"
-                          alt=""
-                          className="skill-icon-img"
-                        />
-                      </div>
-
-                      <div className="skill-item">
-                        <img
-                          src="./images/tailwind.svg"
-                          alt=""
-                          className="skill-icon-img"
-                        />
-                      </div>
                     </div>
                   </div>
-                  <div className="skill-content">
-                    <h4>BACKEND</h4>
+                  <div className="skill-content skill-content-2">
+                    <h4>
+                      <span>BACK-END</span>
+                    </h4>
                     <div className="skill-items-2">
                       <div className="skill-item">
                         <img
@@ -312,243 +271,7 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             {/* =================== Community start ========================= */}
-            <section className="cummunity section-bg">
-              <div className="page-bg-5 page-bg"></div>
-              <div className="container">
-                <div className="community-wrapper">
-                  <div className="community-title">
-                    <h1 className="section-title">
-                      Proj<span>ects</span>{" "}
-                    </h1>
-                  </div>
-                  <div className="community-items">
-                    {/* <div className="community-item cummunity-item-1">
-                      <div className="community-item-img">
-                        <img
-                          src="./images/community-item-1.png"
-                          alt=""
-                          className="com-1"
-                        />
-                      
-                      </div>
-                      <div className="community-content">
-                        <h3>community</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took{" "}
-                        </p>
-                      </div>
-                    </div> */}
-                    {/* <div className="community-item cummunity-item-1">
-                      <div className="community-item-img">
-                        <img
-                          src="./images/community-item-1.png"
-                          alt=""
-                          className="com-1"
-                        />
-                        <img
-                          src="./images/community-item-hover-1.png"
-                          alt=""
-                          className="com-2"
-                        />
-                      </div>
-                      <div className="community-content">
-                        <h3>community</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took{" "}
-                        </p>
-                      </div>
-                    </div> */}
-                    {/* <div className="community-item cummunity-item-2">
-                      <div className="community-item-img">
-                        <img
-                          src="./images/community-item-1.png"
-                          alt=""
-                          className="com-1"
-                        />
-                        <img
-                          src="./images/community-item-hover-1.png"
-                          alt=""
-                          className="com-2"
-                        />
-                      </div>
-                      <div className="community-content">
-                        <h3>Events</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took{" "}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="community-item cummunity-item-3">
-                      <div className="community-item-img">
-                        <img
-                          src="./images/community-item-1.png"
-                          alt=""
-                          className="com-1"
-                        />
-                        <img
-                          src="./images/community-item-hover-1.png"
-                          alt=""
-                          className="com-2"
-                        />
-                      </div>
-                      <div className="community-content">
-                        <h3>Learn</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took{" "}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="community-item cummunity-item-4">
-                      <div className="community-item-img">
-                        <img
-                          src="./images/community-item-1.png"
-                          alt=""
-                          className="com-1"
-                        />
-                        <img
-                          src="./images/community-item-hover-1.png"
-                          alt=""
-                          className="com-2"
-                        />
-                      </div>
-                      <div className="community-content">
-                        <h3>Grow</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took{" "}
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-
-                  <div className="projects-items community-items">
-                    <div className="project-item">
-                      <div className="project-img">
-                        <img src="./images/project.png" alt="" />
-                      </div>
-                      <div className="project-content">
-                        <h2>Portfolio 2022</h2>
-                        <div className="project-skill">
-                          <ul>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                          </ul>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <div className="project-links">
-                          <div className="project-github-link">
-                            <Link to="/about">
-                              <img src="./images/code.svg" alt="" />
-                            </Link>
-                          </div>
-                          <Link to="/" className="live-view-btn">
-                            Live View
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="project-item">
-                      <div className="project-img">
-                        <img src="./images/project.png" alt="" />
-                      </div>
-                      <div className="project-content">
-                        <h2>Portfolio 2022</h2>
-                        <div className="project-skill">
-                          <ul>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                          </ul>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <div className="project-links">
-                          <div className="project-github-link">
-                            <Link to="/about">
-                              <img src="./images/code.svg" alt="" />
-                            </Link>
-                          </div>
-                          <Link to="/" className="live-view-btn">
-                            Live View
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="project-item">
-                      <div className="project-img">
-                        <img src="./images/project.png" alt="" />
-                      </div>
-                      <div className="project-content">
-                        <h2>Portfolio 2022</h2>
-                        <div className="project-skill">
-                          <ul>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                          </ul>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <div className="project-links">
-                          <div className="project-github-link">
-                            <Link to="/about">
-                              <img src="./images/code.svg" alt="" />
-                            </Link>
-                          </div>
-                          <Link to="/" className="live-view-btn">
-                            Live View
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="project-item">
-                      <div className="project-img">
-                        <img src="./images/project.png" alt="" />
-                      </div>
-                      <div className="project-content">
-                        <h2>Portfolio 2022</h2>
-                        <div className="project-skill">
-                          <ul>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                            <li>HTML</li>
-                          </ul>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <div className="project-links">
-                          <div className="project-github-link">
-                            <Link to="/about">
-                              <img src="./images/code.svg" alt="" />
-                            </Link>
-                          </div>
-                          <Link to="/" className="live-view-btn">
-                            Live View
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </section>
+            <Projects />
             {/* =================== Community end ========================= */}
           </SwiperSlide>
           <SwiperSlide>
@@ -559,57 +282,47 @@ function Home() {
                 <div className="backer-wrapper">
                   <div className="backer-title">
                     <h1 className="section-title">
-                      <span>OUR BACKERS</span>
+                      <span>Contact US</span>
                     </h1>
                   </div>
                   <div className="backer-items">
                     <div className="backer-item backer-item-1">
-                      <img
-                        src="./images/backer-1.png"
-                        alt=""
-                        className="backer-1"
-                      />
-                      <img
-                        src="./images/backer-hover-1.png"
-                        className="backer-2"
-                        alt=""
-                      />
+                      <div className="contact-img">
+                        <img src="./images/contact-1.svg" alt="" />
+                      </div>
+                      <div className="contact-content">
+                        <div className="contact-icon">
+                          <img src="./images/map.svg" alt="" />
+                        </div>
+                        <h4>Address</h4>
+                        <p>Dinajpur, Rongpur, Bangladesh</p>
+                      </div>
                     </div>
                     <div className="backer-item backer-item-2">
-                      <img
-                        src="./images/backer-2.png"
-                        alt=""
-                        className="backer-1"
-                      />
-                      <img
-                        src="./images/backer-hover-2.png"
-                        className="backer-2"
-                        alt=""
-                      />
+                      <div className="contact-img">
+                        <img src="./images/contact-1.svg" alt="" />
+                      </div>
+                      <div className="contact-content">
+                        <div className="contact-icon">
+                          <img src="./images/email.svg" alt="" />
+                        </div>
+                        <h4>Email ADDRESS</h4>
+                        <a href="mailto:monoj93roy@gmail.com">
+                          monoj93roy@gmail.com
+                        </a>
+                      </div>
                     </div>
                     <div className="backer-item backer-item-3">
-                      <img
-                        src="./images/backer-3.png"
-                        alt=""
-                        className="backer-1"
-                      />
-                      <img
-                        src="./images/backer-hover-3.png"
-                        className="backer-2"
-                        alt=""
-                      />
-                    </div>
-                    <div className="backer-item backer-item-4">
-                      <img
-                        src="./images/backer-4.png"
-                        alt=""
-                        className="backer-1"
-                      />
-                      <img
-                        src="./images/backer-hover-4.png"
-                        className="backer-2"
-                        alt=""
-                      />
+                      <div className="contact-img">
+                        <img src="./images/contact-1.svg" alt="" />
+                      </div>
+                      <div className="contact-content">
+                        <div className="contact-icon">
+                          <img src="./images/phone.svg" alt="" />
+                        </div>
+                        <h4>PHONE NUMBER</h4>
+                        <a href="tel:+01757859893">01757859893</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -628,8 +341,8 @@ function Home() {
                       >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
-                          <img src="./images/twitter.png" alt="" />
-                          <p>Twitter</p>
+                          <img src="./images/facebook1.png" alt="" />
+                          <p>Facebook</p>
                         </div>
                       </a>
                     </div>
@@ -637,8 +350,8 @@ function Home() {
                       <a href="" target="_blank">
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
-                          <img src="./images/discord.png" alt="" />
-                          <p>Discord</p>
+                          <img src="./images/linkedin1.png" alt="" />
+                          <p>Linkedin</p>
                         </div>
                       </a>
                     </div>
@@ -652,21 +365,25 @@ function Home() {
                       </a>
                     </div>
                     <div className="social-list">
-                      <a href="https://pentonium.medium.com/" target="_blank">
+                      <a
+                        href="https://wa.me/8801757859893"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
-                          <img src="./images/mediums.png" alt="" />
-                          <p>Medium</p>
+                          <img src="./images/whatsapp1.png" alt="" />
+                          <p>WhatsApp</p>
                         </div>
                       </a>
                     </div>
                   </div>
                   <div className="copyright">
                     <p>
-                      © 2023 Hooked All Rights Reserved. All names, logos,
-                      images,and brands are property of their respective owners.
-                      Non-Affiliation and Disclaimer
+                      &copy; {new Date().getFullYear()} Monoj All Rights
+                      Reserved. Designed & Developed by Monoj Kumar
                     </p>
+                    <p></p>
                   </div>
                 </div>
               </div>

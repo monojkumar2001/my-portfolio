@@ -48,7 +48,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  /* gap: 15px; */
+  gap: 15px;
 }
 .social-list a{
   display: flex;
@@ -63,17 +63,17 @@
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .social-content p{
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 20px;
 }
 .social-content img{
   width: 25px !important;
 }
 .socials .social-list img {
-  width: 70%;
+  width: 100%;
 }
 .socials .social-list{
   transition: 0.4s;
