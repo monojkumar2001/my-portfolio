@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { HashLink as HashLink } from "react-router-hash-link";
 import "swiper/swiper.min.css";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import "swiper/modules/pagination/pagination.min.css";
@@ -10,16 +7,6 @@ import { Mousewheel, Pagination } from "swiper";
 import Typed from "react-typed";
 import Projects from "./Projects";
 function Home() {
-  // States
-  const [activeFaq, setActiveFaq] = useState();
-  const [value, setValue] = useState(1);
-  const [socialActive, setSocialActive] = useState(false);
-
-  const _toggleSidebar = () => {
-    setSocialActive(!socialActive);
-  };
-  const [isHovering, setIsHovering] = useState(1);
-
   const pagination = {
     clickable: true,
     renderBullet: (index, className) => {
@@ -108,7 +95,7 @@ function Home() {
             </section>
           </SwiperSlide>
           <SwiperSlide>
-            {/* =================== virtual-office start ================== */}
+            {/* =================== About start ================== */}
             <section className="virtual-office cpb-6 section-bg">
               <div className="page-bg-3 page-bg"></div>
               <div className="virtual-wrapper">
@@ -136,10 +123,10 @@ function Home() {
                 </div>
               </div>
             </section>
-            {/* =================== virtual-office end ================== */}
+            {/* =================== About end ================== */}
           </SwiperSlide>
           <SwiperSlide>
-            {/* ================= Remote Job Start ==================== */}
+            {/* ================= Skill Start ==================== */}
             <section className="remote section-bg">
               <div className="page-bg-4 page-bg"></div>
 
@@ -267,15 +254,15 @@ function Home() {
                 </div>
               </div>
             </section>
-            {/* ================= Remote Job end ==================== */}
+            {/* ================= Skill end ==================== */}
           </SwiperSlide>
           <SwiperSlide>
-            {/* =================== Community start ========================= */}
+            {/* =================== Projects start ========================= */}
             <Projects />
-            {/* =================== Community end ========================= */}
+            {/* =================== Projects end ========================= */}
           </SwiperSlide>
           <SwiperSlide>
-            {/* ===================== Backer start ================== */}
+            {/* ===================== Contact Me  start ================== */}
             <section className="backer cpb-6 section-bg">
               <div className="page-bg-6 page-bg"></div>
               <div className="container">
@@ -338,7 +325,7 @@ function Home() {
                       <a
                         href="https://www.facebook.com/monojkumar202"
                         target="_blank"
-                       rel="noopener noreferrer"
+                        rel="noopener noreferrer"
                       >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
@@ -361,7 +348,11 @@ function Home() {
                       </a>
                     </div>
                     <div className="social-list">
-                      <a href="https://t.me/monojkumar" rel="noopener noreferrer" target="_blank">
+                      <a
+                        href="https://t.me/monojkumar"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
                           <img src="./images/telegram.png" alt="" />
@@ -393,7 +384,7 @@ function Home() {
                 </div>
               </div>
             </section>
-            {/* ===================== Backer end ================== */}
+            {/* =====================  Contact Me end ================== */}
           </SwiperSlide>
         </Swiper>
       </section>

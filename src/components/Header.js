@@ -1,33 +1,20 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-
-import { HashLink as HashLink } from "react-router-hash-link";
-
-import Web3 from "web3";
-import Web3Modal from "web3modal";
-import { useHistory, useLocation } from "react-router-dom";
-
+import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Header() {
-  const [navActive, setNavActive] = useState(false);
-  const [sidebarActive, setSidebarActive] = useState(false);
-
   const [menuActive, setMenuActive] = useState(false);
   const _toggleSidebar = () => {
     setMenuActive(!menuActive);
   };
   AOS.init();
-  const [isHovering, setIsHovering] = useState(1);
-
   return (
     <>
       <header className="header-mobile" id="home">
         <div className="nav-left">
           <Link to="/">
-            {" "}
             <div className="nav-logo">
               <img src="./images/logo.png" alt="" />
             </div>{" "}
