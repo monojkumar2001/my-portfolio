@@ -10,9 +10,12 @@ const Projects = () => {
     <section className="cummunity section-bg">
       <div className="page-bg-5 page-bg"></div>
       <div className="container">
-        <div className="community-wrapper project"  data-aos="fade-up"
-            data-aos-duration="3000">
-          <div className="community-title"   >
+        <div
+          className="community-wrapper project"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div className="community-title">
             <h1 className="section-title">
               Proj<span>ects</span>
             </h1>
@@ -34,12 +37,11 @@ const Projects = () => {
               1440: { slidesPerView: 4, spaceBetween: 40 },
             }}
             className="project-wrapper"
-         
           >
             {projectData.map((item) => (
               <SwiperSlide key={item.key}>
-                <div className={item.projectItemClass}   >
-                  <div className="project-img" >
+                <div className={item.projectItemClass}>
+                  <div className="project-img">
                     <img
                       src={item.projectImage}
                       alt={item.altText || "Project"}
@@ -54,19 +56,24 @@ const Projects = () => {
                         ))}
                       </ul>
                     </div>
-                    <p>{item.description}</p>
                     <div className="project-links">
                       <div className="project-github-link">
-                        <Link to={item.projectLinks.githubLink}>
-                          <img src="./images/code.svg" alt="Code" />
-                        </Link>
+                        <a
+                          href={item.projectLinks.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src="./images/code.svg" alt="monoj" />
+                        </a>
                       </div>
-                      <Link
-                        to={item.projectLinks.liveViewLink}
+                      <a
+                        href={item.projectLinks.liveViewLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="live-view-btn"
                       >
                         Live View
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -94,14 +101,13 @@ const projectData = [
   {
     key: 0,
     projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project.png",
-    altText: "",
-    projectTitle: "Portfolio 2022",
-    projectSkills: ["HTML", "CSS", "JavaScript", "React"],
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectImage: "./images/project-1.png",
+    altText: "Full Stack Web Tech Services For NFT & Fintech Companies",
+    projectTitle: "Full Stack Web Tech Services For NFT & Fintech Companies",
+    projectSkills: ["HTML", "CSS", "JavaScript", "Next Js", "Laravel", "MySQL"],
     projectLinks: {
-      githubLink: "/",
-      liveViewLink: "/",
+      githubLink: "https://github.com/monojkumar2001/nfes",
+      liveViewLink: "https://nfes.vercel.app/",
     },
   },
   {

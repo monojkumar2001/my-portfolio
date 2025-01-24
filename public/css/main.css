@@ -61,7 +61,7 @@ span.typed-cursor.typed-cursor--blink {
 }
 .hero-img img {
   z-index: -1;
-  width: 95%;
+  width: 88%;
   height: 800px;
 }
 .hero-warrper {
@@ -247,7 +247,7 @@ span.typed-cursor.typed-cursor--blink {
 
 /* {=================== virtual-office start ==================} */
 .virtual-office {
-  padding: 150px 0 100px 0;
+  padding: 180px 0 100px 0;
 }
 .virtual-wrapper {
   width: 80%;
@@ -415,10 +415,10 @@ span.typed-cursor.typed-cursor--blink {
   margin: auto;
   padding-top: 30px;
 }
-.skill-item{
+.skill-item {
   transition: 0.4s;
 }
-.skill-item:hover{
+.skill-item:hover {
   transform: scale(1.2);
 }
 .skill-item img {
@@ -582,12 +582,13 @@ section.backer {
   background-repeat: no-repeat;
   background-size: 100%;
   height: fit-content;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   border: 1px solid #fff;
   transition: 0.4s;
   cursor: pointer;
   position: relative;
+  height: 400px;
 }
 .project-item::before {
   content: "";
@@ -609,7 +610,7 @@ section.backer {
 }
 .project-img {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .project-img img {
@@ -619,16 +620,18 @@ section.backer {
 }
 
 .project-content h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 150%;
 }
 
 .project-content {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   text-align: start;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  padding: 20px;
 }
 
 .project-skill ul {
@@ -661,15 +664,23 @@ a.live-view-btn {
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
+  transition: 0.4s;
 }
 a.live-view-btn:hover {
+  background: linear-gradient(90deg, #00ddff 0%, #6affb0 52.43%);
+  transition: 0.4s;
   color: #fff;
+  transform: scale(1.02);
 }
 
 .project-github-link a {
   padding: 10px 11px;
   background: #b9bbbe;
   border-radius: 4px;
+  transition: 0.4s;
+}
+.project-github-link a:hover{
+  background: linear-gradient(90deg, #00ddff 0%, #6affb0 52.43%);
 }
 
 .project-github-link a img {
@@ -742,7 +753,7 @@ a.live-view-btn:hover {
 }
 .custom-navigation .swiper-button-disabled {
   background: linear-gradient(90deg, #bdcac3 0%, #668a90 52.43%);
-    transition: 0.4s;
+  transition: 0.4s;
 }
 .custom-navigation button img {
   /* max-width: 100%; */

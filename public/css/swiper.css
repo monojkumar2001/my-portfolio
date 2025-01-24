@@ -11,20 +11,20 @@
 }
 .mySwiper::before {
   content: "";
-  background-size: 80%;
+  background-size: 71%;
   position: absolute;
   right: -11%;
   z-index: 1;
   width: 76%;
   height: 100px;
   background-repeat: no-repeat;
-  background-image: url(../images//nav-bg-img.png);
+  background-image: url(../images/nav-bg-img-2.png);
   top: 4%;
 }
 
 .swiper-pagination {
   top: 7% !important;
-  left: 14% !important;
+  left: 12% !important;
   width: 100%;
   height: 100px;
 }
@@ -88,14 +88,14 @@
   content: "";
   position: absolute;
   background-image: url(../images/logo-nav-bg.png);
-  width: 283px;
+  width: 285px;
   background-repeat: no-repeat;
   height: 100%;
   z-index: 1;
-  left: -9%;
+  left: -5%;
   display: inline-block;
   top: -27%;
-  background-size: 274px;
+  background-size: 267px;
 }
 .swiper-slide {
   text-align: center;

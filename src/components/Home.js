@@ -336,8 +336,9 @@ function Home() {
                   <div className="socials">
                     <div className="social-list">
                       <a
-                        href="https://twitter.com/pentonium_ptm"
+                        href="https://www.facebook.com/monojkumar202"
                         target="_blank"
+                       rel="noopener noreferrer"
                       >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
@@ -347,7 +348,11 @@ function Home() {
                       </a>
                     </div>
                     <div className="social-list">
-                      <a href="" target="_blank">
+                      <a
+                        rel="noopener noreferrer"
+                        href="https://www.linkedin.com/in/monojkumar"
+                        target="_blank"
+                      >
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
                           <img src="./images/linkedin1.png" alt="" />
@@ -356,7 +361,7 @@ function Home() {
                       </a>
                     </div>
                     <div className="social-list">
-                      <a href="https://t.me/pentonium" target="_blank">
+                      <a href="https://t.me/monojkumar" rel="noopener noreferrer" target="_blank">
                         <img src="./images/social-bg.png" alt="" />
                         <div className="social-content">
                           <img src="./images/telegram.png" alt="" />
@@ -739,7 +744,7 @@ function Home() {
                 </a>
               </div>
               <div className="social-list">
-                <a href="https://t.me/pentonium" target="_blank">
+                <a href="" target="_blank">
                   <img src="./images/social-bg.png" alt="" />
                   <div className="social-content">
                     <img src="./images/telegram.png" alt="" />
