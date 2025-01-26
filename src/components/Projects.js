@@ -113,7 +113,7 @@ const projectData = [
   {
     key: 1,
     projectItemClass: "project-item cummunity-item-2",
-    projectImage: "./images/project.png",
+    projectImage: "./images/project-2.png",
     altText: "",
     projectTitle: "Portfolio 2022",
     projectSkills: ["HTML", "CSS", "JavaScript", "React"],
@@ -126,7 +126,7 @@ const projectData = [
   {
     key: 2,
     projectItemClass: "project-item cummunity-item-3",
-    projectImage: "./images/project.png",
+    projectImage: "./images/project-3.png",
     altText: "",
     projectTitle: "Portfolio 2022",
     projectSkills: ["HTML", "CSS", "JavaScript", "React"],
@@ -139,7 +139,7 @@ const projectData = [
   {
     key: 3,
     projectItemClass: "project-item cummunity-item-4",
-    projectImage: "./images/project.png",
+    projectImage: "./images/project-4.png",
     altText: "",
     projectTitle: "Portfolio 2022",
     projectSkills: ["HTML", "CSS", "JavaScript", "React"],
@@ -152,7 +152,7 @@ const projectData = [
   {
     key: 4,
     projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project.png",
+    projectImage: "./images/project-5.png",
     altText: "",
     projectTitle: "Portfolio 2022",
     projectSkills: ["HTML", "CSS", "JavaScript", "React"],
@@ -165,33 +165,7 @@ const projectData = [
   {
     key: 5,
     projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project.png",
-    altText: "",
-    projectTitle: "Portfolio 2022",
-    projectSkills: ["HTML", "CSS", "JavaScript", "React"],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "/",
-      liveViewLink: "/",
-    },
-  },
-  {
-    key: 6,
-    projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project.png",
-    altText: "",
-    projectTitle: "Portfolio 2022",
-    projectSkills: ["HTML", "CSS", "JavaScript", "React"],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "/",
-      liveViewLink: "/",
-    },
-  },
-  {
-    key: 7,
-    projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project.png",
+    projectImage: "./images/project-6.png",
     altText: "",
     projectTitle: "Portfolio 2022",
     projectSkills: ["HTML", "CSS", "JavaScript", "React"],
