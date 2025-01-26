@@ -44,7 +44,7 @@ function Home() {
                       strings={[
                         `Hi, This is Monoj Kumar! Full Stack Developer Specializing in Laravel and React. `,
                       ]}
-                      typeSpeed={120}
+                      typeSpeed={30}
                       backSpeed={50}
                       loop={false}
                     ></Typed>
@@ -55,7 +55,8 @@ function Home() {
                     interfaces. Currently working as a Full Stack Developer.
                   </p>
                   <div className="join-btn">
-                    <a href="">
+                    <a href="./images/monoj.pdf" target="_blank"
+                  rel="noopener noreferrer">
                       <img src="./images/join-discord-btn.png" alt="" />
                       <div className="join-btn-text">
                         <p>Resume</p>

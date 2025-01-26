@@ -24,6 +24,7 @@ const Projects = () => {
             slidesPerView={4}
             spaceBetween={30}
             cssMode={true}
+            loop={true}
             modules={[Navigation]}
             navigation={{
               prevEl: ".prev",

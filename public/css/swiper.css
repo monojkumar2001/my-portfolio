@@ -414,14 +414,14 @@
   transform: translateY(400px);
 }
 
- .swiper-slide-active .project-wrapper{
+.swiper-slide-active .project-wrapper {
   transform: translateY(0px);
   opacity: 1;
   transition-delay: 3s;
   transition-property: transform, opacity;
 }
 
- .swiper-slide-active .custom-navigation {
+.swiper-slide-active .custom-navigation {
   transform: translateY(0px);
   opacity: 1;
   transition-delay: 3.5s;
@@ -506,14 +506,14 @@
 @media only screen and (max-width: 1750px) {
   .swiper-pagination {
     top: 6.5% !important;
-    left: 16% !important;
+    left: 15% !important;
   }
   .nav-logo img {
     width: 60px;
   }
   .nav-logo {
     position: absolute;
-    top: 35px;
+    top: 48px;
     left: 12%;
     z-index: 1;
   }
@@ -521,23 +521,26 @@
     content: "";
     position: absolute;
     background-image: url(../images/logo-nav-bg.png);
-    width: 283px;
+    width: 229px;
     background-repeat: no-repeat;
     height: 100%;
     z-index: 1;
     left: -9%;
     display: inline-block;
-    top: -27%;
+    top: -15%;
     background-size: 230px;
   }
 }
 @media only screen and (max-width: 1600px) {
   .mySwiper::before {
-    background-size: 80%;
+    background-size: 74%;
     right: -14%;
     z-index: 1;
-    width: 81%;
+    width: 76%;
     top: 4%;
+  }
+  .nav-logo img {
+    width: 51px;
   }
 }
 @media only screen and (max-width: 1400px) {

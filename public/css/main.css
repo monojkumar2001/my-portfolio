@@ -268,6 +268,7 @@ span.typed-cursor.typed-cursor--blink {
 }
 .virtual-left img {
   transition: 0.4s;
+  width: 100%;
 }
 .virtual-left img:hover {
   transform: scale(1.05);
@@ -318,6 +319,7 @@ span.typed-cursor.typed-cursor--blink {
 }
 .virtual-right .virtual-img img {
   transition: 0.4s;
+  width: 100%;
 }
 .virtual-right .virtual-img img:hover {
   transform: scale(1.05);
