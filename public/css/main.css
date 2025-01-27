@@ -621,10 +621,15 @@ section.backer {
   display: block;
 }
 
-.project-content h2 {
+.project-content .project-title {
   font-size: 16px;
   font-weight: 500;
+  color: #fff;
   line-height: 150%;
+  transition: .04s;
+}
+.project-item:hover .project-content .project-title {
+  color: #00ddff;
 }
 
 .project-content {
@@ -661,12 +666,13 @@ a.live-view-btn {
   color: #fff;
   width: 100%;
   text-align: center;
-  padding: 10px 20px;
+  padding: 6px 20px;
   background: linear-gradient(90deg, #6affb0 0%, #00ddff 52.43%);
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
   transition: 0.4s;
+  font-size: 16px;
 }
 a.live-view-btn:hover {
   background: linear-gradient(90deg, #00ddff 0%, #6affb0 52.43%);
@@ -676,17 +682,17 @@ a.live-view-btn:hover {
 }
 
 .project-github-link a {
-  padding: 10px 11px;
+  padding: 6px 11px;
   background: #b9bbbe;
   border-radius: 4px;
   transition: 0.4s;
 }
-.project-github-link a:hover{
+.project-github-link a:hover {
   background: linear-gradient(90deg, #00ddff 0%, #6affb0 52.43%);
 }
 
 .project-github-link a img {
-  width: 30px;
+  width: 25px;
 }
 
 .project-content p {
@@ -759,5 +765,5 @@ a.live-view-btn:hover {
 }
 .custom-navigation button img {
   /* max-width: 100%; */
-  width: 18px;
+  width: 15px;
 }

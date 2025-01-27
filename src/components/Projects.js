@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -24,7 +25,6 @@ const Projects = () => {
             slidesPerView={4}
             spaceBetween={30}
             cssMode={true}
-            loop={true}
             modules={[Navigation]}
             navigation={{
               prevEl: ".prev",
@@ -34,7 +34,7 @@ const Projects = () => {
               320: { slidesPerView: 1, spaceBetween: 10 },
               768: { slidesPerView: 2, spaceBetween: 20 },
               1024: { slidesPerView: 3, spaceBetween: 30 },
-              1440: { slidesPerView: 4, spaceBetween: 40 },
+              1300: { slidesPerView: 4, spaceBetween: 40 },
             }}
             className="project-wrapper"
           >
@@ -48,7 +48,14 @@ const Projects = () => {
                     />
                   </div>
                   <div className="project-content">
-                    <h2>{item.projectTitle}</h2>
+                    <a
+                      href={item.projectLinks.liveViewLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-title"
+                    >
+                      {item.projectTitle}
+                    </a>
                     <div className="project-skill">
                       <ul>
                         {item.projectSkills.map((skill, index) => (

@@ -508,9 +508,7 @@
     top: 6.5% !important;
     left: 15% !important;
   }
-  .nav-logo img {
-    width: 60px;
-  }
+
   .nav-logo {
     position: absolute;
     top: 48px;
@@ -539,28 +537,15 @@
     width: 76%;
     top: 4%;
   }
-  .nav-logo img {
-    width: 51px;
-  }
 }
 @media only screen and (max-width: 1400px) {
   .swiper-pagination {
     top: 6.5% !important;
     left: 16% !important;
   }
-  .nav-logo img {
-    width: 51px;
-  }
-  .nav-logo {
-    position: absolute;
-    top: 35px;
-    left: 12%;
-    z-index: 1;
-  }
-  .hero-img img {
-    width: 95%;
-    height: 750px;
-  }
+
+
+
   .swiper-pagination-bullet-active::after {
     content: "";
     position: absolute;
@@ -571,7 +556,7 @@
     z-index: 1;
     left: -9%;
     display: inline-block;
-    top: -27%;
+    top: -17%;
     background-size: 197px;
   }
 }
