@@ -38,69 +38,75 @@ function Header() {
             </a>
           </HashLink>
 
-          <HashLink to="/#talent">
+          <HashLink to="/#about">
             <a
               onClick={_toggleSidebar}
-              href="#talent"
+              href="#about"
               className="nav-link mobile-link"
             >
-              Talent Pool
+              About
             </a>
           </HashLink>
-          <HashLink to="/#virtual">
+          <HashLink to="/#skill">
             <a
               onClick={_toggleSidebar}
-              href="#virtual"
+              href="#skill"
               className="nav-link mobile-link"
             >
-              Virtual
+              Skill
             </a>
           </HashLink>
-          <HashLink to="/#remote">
+          <HashLink to="/#projects">
             <a
               onClick={_toggleSidebar}
-              href="#remote"
+              href="#projects"
               className="nav-link mobile-link"
             >
-              Remote
+              Projects
             </a>
           </HashLink>
-          <HashLink to="/#cummunity">
+          <HashLink to="/#contact">
             <a
               onClick={_toggleSidebar}
-              href="#cummunity"
+              href="#contact"
               className="nav-link mobile-link"
             >
-              Cummunity
+              Contact Me
             </a>
           </HashLink>
-          <HashLink to="/#backer">
-            <a
-              onClick={_toggleSidebar}
-              href="#backer"
-              className="nav-link mobile-link"
-            >
-              Backer
-            </a>
-          </HashLink>
+
           <div className="header-link-mobile">
             <div className="social-mob">
-            <a href="https://pentonium.medium.com/" target={"_blank"}>
-     
-     <img src="./images/medium.png" alt="" />
-   </a>
-   <a href="https://twitter.com/pentonium_ptm" target={"_blank"}>
-
-     <img src="./images/twitter-logo.png" alt="" />
-   </a>
-   <a href="" target={"_blank"}>
-     <img src="./images/discord-logo.png" alt="" />
-   </a>
+              <a
+                href="https://www.facebook.com/monojkumar202"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/facebook.png" alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/monojkumar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/linkedin.png" alt="" />
+              </a>
+              <a
+                href="https://wa.me/8801757859893"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/whatsapp.png" alt="" />
+              </a>
             </div>
           </div>
           <button className="join-discord-btn-nav">
-            <a href="">
-              <img src="./images/join-discord-btn.png" alt="" />
+            <a
+              href="./images/monoj.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/join-discord-btn-mobile.png" alt="" />
             </a>
           </button>
         </nav>

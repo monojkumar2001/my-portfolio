@@ -55,8 +55,11 @@ function Home() {
                     interfaces. Currently working as a Full Stack Developer.
                   </p>
                   <div className="join-btn">
-                    <a href="./images/monoj.pdf" target="_blank"
-                  rel="noopener noreferrer">
+                    <a
+                      href="./images/monoj.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src="./images/join-discord-btn.png" alt="" />
                       <div className="join-btn-text">
                         <p>Resume</p>
@@ -404,18 +407,16 @@ function Home() {
             <div className="hero-mobile-warrper">
               <div className="hero-mobile-left">
                 <h1
-                  className="mobile-section-title"
+                  className="mobile-section-title mobile-hero-section-title"
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
-                  Future infrastructure for workforce
+                  Hi, This is Monoj Kumar! Full Stack Developer Specializing in
+                  Laravel and React.
                 </h1>
                 <p data-aos="fade-down" data-aos-duration="2500">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  I build scalable web applications and intuitive user
+                  interfaces. Currently working as a Full Stack Developer.
                 </p>
                 <button
                   className="mobile-join-discord-btn"
@@ -423,7 +424,7 @@ function Home() {
                   data-aos-offset="300"
                   data-aos-duration="3000"
                 >
-                  <a href="">
+                  <a href="./images/monoj.pdf" target="_blank">
                     <img src="./images/join-discord-btn-mobile.png" alt="" />
                   </a>
                 </button>
@@ -440,79 +441,32 @@ function Home() {
         </section>
         {/* =============== Hero Section End ===================== */}
 
-        {/* ================= talent Start ==================== */}
-        <section className="talent-mobile" id="talent">
-          <div className="container">
-            <div className="talent-mobile-wrapper">
-              <div
-                className="talent-mobile-item"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                <h3>Talent pool</h3>
-                <p>
-                  Discover the right candidate from a big pool of talent
-                  marketplace.{" "}
-                </p>
-              </div>
-              <div
-                className="talent-mobile-item"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                <h3>s b t s</h3>
-                <p>
-                  Collect SBTs as badges and achievements to get recognized
-                  among the peers.{" "}
-                </p>
-              </div>
-              <div
-                className="talent-mobile-item"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                <h3>Autonomous Agreement Protocol </h3>
-                <p>
-                  We have built a protocol to define an escrow smart contract
-                  with inbuilt dispute resolution.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* ================= talent end ==================== */}
-
         {/* =================== virtual-office start ================== */}
-        <section className="mobile-virtual" id="virtual">
+        <section className="mobile-virtual" id="about">
           <div className="container">
             <div className="mobile-virtual-wrapper">
-              <div
-                className="mobile-virtual-left"
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-              >
-                <img src="./images/virtual-2.png" alt="" />
-              </div>
               <div className="mobile-virtual-right">
                 <div
                   className="mobile-virtual-content"
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <h1 className="mobile-section-title">Virtual Offices</h1>
+                  <h1 className="mobile-section-title"> About me</h1>
                   <p>
-                    Having a meeting or an event in your office? Or missing out
-                    the experience of sitting with your colleagues is something
-                    which makes us travel to the office every day. Pentonium
-                    offers to build virtual spaces ( offices / meeting rooms )
-                    according to the brands and help them launch events,
-                    gathering or other activities, customized just for the brand
-                    keeping the brand value alive.{" "}
+                    Welcome to a space where creativity meets innovation. I’m
+                    Monoj Kumar, a passionate Full Stack Developer with
+                    expertise in Laravel, React.js, and Next.js. I craft
+                    scalable web solutions and intuitive user interfaces to
+                    bring ideas to life.
                   </p>
                 </div>
+              </div>
+              <div
+                className="mobile-virtual-left"
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+              >
+                <img src="./images/virtual-2.png" alt="" />
               </div>
             </div>
           </div>
@@ -521,27 +475,124 @@ function Home() {
         {/* =================== Remote job start ================== */}
         <section className="mobile-remote" id="remote">
           <div className="container">
-            <div className="mobile-remote-wrapper">
-              <div
-                className="mobile-remote-left"
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-              >
-                <img src="./images/remote-job-img-1.png" alt="" />
+            <div className="skill-wrapper">
+              <div className="community-title">
+                <h1 className="section-title">
+                  Sk<span>ills</span>{" "}
+                </h1>
               </div>
-              <div className="mobile-remote-right">
-                <div
-                  className="mobile-remote-content"
-                  data-aos="fade-left"
-                  data-aos-duration="3000"
-                >
-                  <h1 className="mobile-section-title">remote job</h1>
-                  <p>
-                    Build your business without an office has never been so
-                    easy, offering tools to monitor and engage remote employees
-                    with an extended form of autonomous agreement protocol,
-                    saving money and offering transparency at the same time.
-                  </p>
+
+              <div className="skill-content skill-content-1">
+                <h4>
+                  <span>FRONT-END</span>
+                </h4>
+                <div className="skill-items">
+                  <div className="skill-item">
+                    <img
+                      src="./images/html.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/css.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/bootstrap.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+
+                  <div className="skill-item">
+                    <img
+                      src="./images/tailwind.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/javascript.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/react-js.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/redux.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/next-js.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/typescript.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="skill-content skill-content-2">
+                <h4>
+                  <span>BACK-END</span>
+                </h4>
+                <div className="skill-items-2">
+                  <div className="skill-item">
+                    <img
+                      src="./images/laravel.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/php.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/node.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/mysql.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
+                  <div className="skill-item">
+                    <img
+                      src="./images/monogo.svg"
+                      alt=""
+                      className="skill-icon-img"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -549,87 +600,6 @@ function Home() {
         </section>
         {/* =================== Remote job end ================== */}
 
-        {/* =================== Community start ========================= */}
-        <section className="cummunity" id="cummunity">
-          <div className="container">
-            <div className="mobile-community-wrapper">
-              <h1
-                className="mobile-section-title"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                Community
-              </h1>
-              <div className="mobile-community-items">
-                <div className="mobile-community-item cummunity-item-1">
-                  <div
-                    className="mobile-community-item"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <h2>Community</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
-                    </p>
-                  </div>
-                </div>
-                <div className="mobile-community-item cummunity-item-2">
-                  <div
-                    className="mobile-community-item"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <h2>Events</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
-                    </p>
-                  </div>
-                </div>
-                <div className="mobile-community-item cummunity-item-3">
-                  <div
-                    className="mobile-community-item"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <h2>Learn</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
-                    </p>
-                  </div>
-                </div>
-                <div className="mobile-community-item cummunity-item-4">
-                  <div
-                    className="mobile-community-item"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <h2>Grow</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         {/* =================== Community end ========================= */}
         {/* ===================== Backer start ================== */}
         <section className="cummunity" id="backer">
