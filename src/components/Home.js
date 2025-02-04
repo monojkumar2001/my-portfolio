@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import "swiper/modules/pagination/pagination.min.css";
 import { Mousewheel, Pagination } from "swiper";
 // typed
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import Projects from "./Projects";
 function Home() {
   const pagination = {
@@ -40,14 +40,16 @@ function Home() {
               <div className="hero-warrper">
                 <div className="hero-left">
                   <h1 className="section-title">
-                    <Typed
+                    {/* <Typed
                       strings={[
-                        `Hi, This is Monoj Kumar! Full Stack Developer Specializing in Laravel and React. `,
+                        ` `,
                       ]}
                       typeSpeed={30}
                       backSpeed={50}
                       loop={false}
-                    ></Typed>
+                    ></Typed> */}
+                    Hi, This is Monoj Kumar! Full Stack Developer Specializing
+                    in Laravel and React.
                   </h1>
 
                   <p>
