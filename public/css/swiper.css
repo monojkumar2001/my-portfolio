@@ -108,6 +108,9 @@
   transform: translate3d(0px, -511px, 0px);
   transition-duration: 500ms;
 }
+.project-wrapper .swiper-slide {
+  transform: none;
+}
 .swiper-slide-active {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
@@ -543,8 +546,6 @@
     top: 6.5% !important;
     left: 16% !important;
   }
-
-
 
   .swiper-pagination-bullet-active::after {
     content: "";
