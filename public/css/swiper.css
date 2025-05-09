@@ -584,3 +584,9 @@
     margin-top: -8px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .mobile-project-wrapper .swiper-silide {
+    transform: translate3d(0px, 0px, 0px) !important;
+    opacity: 1 !important;
+  }
+}

@@ -6,6 +6,7 @@ import { Mousewheel, Pagination } from "swiper";
 // typed
 // import Typed from "react-typed";
 import Projects from "./Projects";
+import MobileProjects from "./MobileProjects";
 function Home() {
   const pagination = {
     clickable: true,
@@ -397,7 +398,7 @@ function Home() {
       {/* =================== Desktop end ==================== */}
 
       {/* ================ Mobile device  start =============== */}
-      <section className="mobile-home">
+      <div className="mobile-home">
         {/* =============== Hero Section Start ===================== */}
         <section
           className="hero-mobile"
@@ -422,9 +423,8 @@ function Home() {
                 </p>
                 <button
                   className="mobile-join-discord-btn"
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-duration="3000"
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
                 >
                   <a href="./images/monoj.pdf" target="_blank">
                     <img src="./images/join-discord-btn-mobile.png" alt="" />
@@ -479,12 +479,12 @@ function Home() {
           <div className="container">
             <div className="skill-wrapper">
               <div className="community-title">
-                <h1 className="section-title">
+                <h1 className="mobile-section-title">
                   Sk<span>ills</span>{" "}
                 </h1>
               </div>
 
-              <div className="skill-content skill-content-1">
+              <div className="skill-mobile-content">
                 <h4>
                   <span>FRONT-END</span>
                 </h4>
@@ -555,7 +555,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="skill-content skill-content-2">
+              <div className="skill-mobile-content skill-mobile-content-2">
                 <h4>
                   <span>BACK-END</span>
                 </h4>
@@ -602,80 +602,127 @@ function Home() {
         </section>
         {/* =================== Remote job end ================== */}
 
-        {/* =================== Community end ========================= */}
+        {/* =================== Project start ========================= */}
+        {/* <MobileProjects /> */}
+        {/* =================== Project end ========================= */}
+
         {/* ===================== Backer start ================== */}
-        <section className="cummunity" id="backer">
+        <section className="mobile-backer">
           <div className="container">
-            <div className="mobile-community-wrapper">
-              <h1
-                className="mobile-section-title"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                OUR BACKERS
-              </h1>
-              <div className="mobile-community-items backer-items">
-                <div className="mobile-community-item backers-item cummunity-item-1">
-                  <div
-                    className="mobile-community-item-img backer-img"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <img src="./images/backer-1.png" alt="" className="com-1" />
-                    <img
-                      src="./images/backer-hover-1.png"
-                      className="com-2"
-                      alt=""
-                    />
+            <div className="backer-wrapper">
+              <div className="backer-title">
+                <h1 className="mobilesection-title">
+                  <span>Contact US</span>
+                </h1>
+              </div>
+              <div className="backer-items backer-items-mobile">
+                <div className="backer-item backer-item-1">
+                  <div className="contact-img">
+                    <img src="./images/contact-1.svg" alt="" />
+                  </div>
+                  <div className="contact-content">
+                    <div className="contact-icon">
+                      <img src="./images/map.svg" alt="" />
+                    </div>
+                    <h4>Address</h4>
+                    <p>Dinajpur, Rongpur, Bangladesh</p>
                   </div>
                 </div>
-                <div className="mobile-community-item backers-item cummunity-item-2">
-                  <div
-                    className="mobile-community-item-img backer-img"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <img src="./images/backer-2.png" alt="" className="com-1" />
-                    <img
-                      src="./images/backer-hover-2.png"
-                      className="com-2"
-                      alt=""
-                    />
+                <div className="backer-item backer-item-2">
+                  <div className="contact-img">
+                    <img src="./images/contact-1.svg" alt="" />
+                  </div>
+                  <div className="contact-content">
+                    <div className="contact-icon">
+                      <img src="./images/email.svg" alt="" />
+                    </div>
+                    <h4>Email ADDRESS</h4>
+                    <a href="mailto:monoj93roy@gmail.com">
+                      monoj93roy@gmail.com
+                    </a>
                   </div>
                 </div>
-                <div className="mobile-community-item backers-item cummunity-item-3">
-                  <div
-                    className="mobile-community-item-img backer-img"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
-                  >
-                    <img src="./images/backer-3.png" alt="" className="com-1" />
-                    <img
-                      src="./images/backer-hover-3.png"
-                      className="com-2"
-                      alt=""
-                    />
+                <div className="backer-item backer-item-3">
+                  <div className="contact-img">
+                    <img src="./images/contact-1.svg" alt="" />
+                  </div>
+                  <div className="contact-content">
+                    <div className="contact-icon">
+                      <img src="./images/phone.svg" alt="" />
+                    </div>
+                    <h4>PHONE NUMBER</h4>
+                    <a href="tel:+01757859893">01757859893</a>
                   </div>
                 </div>
-                <div className="mobile-community-item backers-item cummunity-item-4">
-                  <div
-                    className="mobile-community-item-img backer-img"
-                    data-aos="zoom-in-up"
-                    data-aos-offset="500"
-                    data-aos-duration="3000"
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-warrper">
+            <div className="footer-bg">
+              <img src="./images/footer-bg.png" alt="" />
+            </div>
+            <div className="footer-con">
+              <div className="socials">
+                <div className="social-list">
+                  <a
+                    href="https://www.facebook.com/monojkumar202"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <img src="./images/backer-4.png" alt="" className="com-1" />
-                    <img
-                      src="./images/backer-hover-4.png"
-                      className="com-2"
-                      alt=""
-                    />
-                  </div>
+                    <img src="./images/social-bg.png" alt="" />
+                    <div className="social-content">
+                      <img src="./images/facebook1.png" alt="" />
+                      <p>Facebook</p>
+                    </div>
+                  </a>
                 </div>
+                <div className="social-list">
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/monojkumar"
+                    target="_blank"
+                  >
+                    <img src="./images/social-bg.png" alt="" />
+                    <div className="social-content">
+                      <img src="./images/linkedin1.png" alt="" />
+                      <p>Linkedin</p>
+                    </div>
+                  </a>
+                </div>
+                <div className="social-list">
+                  <a
+                    href="https://t.me/monojkumar"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img src="./images/social-bg.png" alt="" />
+                    <div className="social-content">
+                      <img src="./images/telegram.png" alt="" />
+                      <p>Telegram</p>
+                    </div>
+                  </a>
+                </div>
+                <div className="social-list">
+                  <a
+                    href="https://wa.me/8801757859893"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./images/social-bg.png" alt="" />
+                    <div className="social-content">
+                      <img src="./images/whatsapp1.png" alt="" />
+                      <p>WhatsApp</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="copyright">
+                <p>
+                  &copy; {new Date().getFullYear()} Monoj All Rights Reserved.
+                  Designed & Developed by Monoj Kumar
+                </p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -683,7 +730,7 @@ function Home() {
         {/* ===================== Backer end ================== */}
 
         {/* =========== Footer start ======================= */}
-        <section className="mobile-footer">
+        {/* <section className="mobile-footer">
           <div className="mobile-footer-bg">
             <img src="./images/footer-bg.png" alt="" />
           </div>
@@ -734,10 +781,10 @@ function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* =========== Footer end ======================= */}
         {/* ================ Mobile device  end =============== */}
-      </section>
+      </div>
 
       {/*  */}
     </React.Fragment>

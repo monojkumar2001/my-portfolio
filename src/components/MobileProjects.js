@@ -4,18 +4,13 @@ import { Navigation } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 
-const Projects = () => {
+const MobileProjects = () => {
   return (
-    <section className="cummunity section-bg">
-      <div className="page-bg-5 page-bg"></div>
+    <section className="mobile-project">
       <div className="container">
-        <div
-          className="community-wrapper project"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
+        <div className=" mobile-project-wrapper">
           <div className="community-title">
-            <h1 className="section-title">
+            <h1 className="mobile-section-title">
               Proj<span>ects</span>
             </h1>
           </div>
@@ -24,8 +19,6 @@ const Projects = () => {
             slidesPerView={4}
             spaceBetween={30}
             cssMode={true}
-            loop={true}
-            speed={1000}
             modules={[Navigation]}
             navigation={{
               prevEl: ".prev",
@@ -37,7 +30,7 @@ const Projects = () => {
               1024: { slidesPerView: 3, spaceBetween: 30 },
               1300: { slidesPerView: 4, spaceBetween: 40 },
             }}
-            className="project-wrapper"
+            className="mobile-sproject-wrapper"
           >
             {projectData.map((item) => (
               <SwiperSlide key={item.key}>
@@ -89,7 +82,7 @@ const Projects = () => {
             ))}
           </Swiper>
 
-          <div className="custom-navigation">
+          <div className="custom-mobile-navigation">
             <button className="prev">
               <img src="./images/arrow-left.svg" alt="Previous" />
             </button>
@@ -103,7 +96,7 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default MobileProjects;
 
 const projectData = [
   {
