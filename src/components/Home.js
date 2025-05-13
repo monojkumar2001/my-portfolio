@@ -41,14 +41,6 @@ function Home() {
               <div className="hero-warrper">
                 <div className="hero-left">
                   <h1 className="section-title">
-                    {/* <Typed
-                      strings={[
-                        ` `,
-                      ]}
-                      typeSpeed={30}
-                      backSpeed={50}
-                      loop={false}
-                    ></Typed> */}
                     Hi, This is Monoj Kumar! Full Stack Developer Specializing
                     in Laravel and React.
                   </h1>
@@ -448,11 +440,7 @@ function Home() {
           <div className="container">
             <div className="mobile-virtual-wrapper">
               <div className="mobile-virtual-right">
-                <div
-                  className="mobile-virtual-content"
-                  data-aos="fade-right"
-                  data-aos-duration="3000"
-                >
+                <div className="mobile-virtual-content">
                   <h1 className="mobile-section-title"> About me</h1>
                   <p>
                     Welcome to a space where creativity meets innovation. I’m
@@ -463,11 +451,7 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div
-                className="mobile-virtual-left"
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-              >
+              <div className="mobile-virtual-left">
                 <img src="./images/virtual-2.png" alt="" />
               </div>
             </div>
@@ -603,7 +587,7 @@ function Home() {
         {/* =================== Remote job end ================== */}
 
         {/* =================== Project start ========================= */}
-        {/* <MobileProjects /> */}
+        <MobileProjects />
         {/* =================== Project end ========================= */}
 
         {/* ===================== Backer start ================== */}
@@ -658,11 +642,8 @@ function Home() {
             </div>
           </div>
 
-          <div className="footer-warrper">
-            <div className="footer-bg">
-              <img src="./images/footer-bg.png" alt="" />
-            </div>
-            <div className="footer-con">
+          <div className="footer-warrper mobile-footer-warrper">
+            <div className="footer-con footer-con-mobile">
               <div className="socials">
                 <div className="social-list">
                   <a

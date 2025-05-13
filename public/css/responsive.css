@@ -101,6 +101,9 @@
   .nav-logo img {
     width: 50px;
   }
+  .nav-mobile-logo img {
+    width: 50px;
+  }
 }
 
 @media only screen and (max-width: 1550px) {
@@ -464,6 +467,17 @@
     text-align: center;
     font-size: 40px;
   }
+  .nav-mobile-logo {
+    left: 30px;
+    top: 40px;
+    position: relative;
+  }
+  .header-mobile {
+    position: relative;
+  }
+  .header-mobile .hum-btn {
+    position: relative;
+  }
   .skill-item img {
     width: 100%;
   }
@@ -512,6 +526,26 @@
   }
   .custom-mobile-navigation {
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .custom-mobile-navigation button {
+    background: linear-gradient(90deg, #6affb0 0%, #00ddff 52.43%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  .custom-mobile-navigation .swiper-button-disabled {
+    background: linear-gradient(90deg, #bdcac3 0%, #668a90 52.43%);
+    transition: 0.4s;
   }
   .talent-mobile-wrapper {
     grid-template-columns: 1fr 1fr;
@@ -561,6 +595,21 @@
   .footer-bg {
     opacity: 1;
     transform: translateY(0px);
+  }
+  .mobile-backer {
+    padding-top: 50px;
+  }
+  .footer-con-mobile {
+    opacity: 1;
+    position: relative;
+    top: 0;
+    padding: 0 10px;
+  }
+  .footer-con-mobile .social-content {
+    gap: 10px;
+  }
+  .socials .social-list img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -612,6 +661,13 @@
   .terms-and-policy {
     width: 80%;
   }
+  .mobile-sproject-wrapper {
+    height: 650px !important;
+    margin-top: 40px;
+  }
+  .project-item {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 576px) {
   .hero-mobile {
@@ -627,6 +683,7 @@
     font-size: 35px;
     line-height: 46px;
     margin-bottom: 19px;
+    overflow-x: inherit;
   }
   .mobile-hero-section-title {
     margin-bottom: 0;
@@ -640,6 +697,12 @@
   .skill-content {
     opacity: 1;
   }
+  .mobile-sproject-wrapper {
+    height: 560px !important;
+  }
+  .custom-mobile-navigation button img {
+    width: 15px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -647,12 +710,18 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .mobile-sproject-wrapper {
+    height: 530px !important;
+  }
   .talent-mobile-item h3 {
     font-size: 27px;
     margin-bottom: 10px;
   }
   .backer-items {
     gap: 30px;
+  }
+  .social-content img {
+    width: 20px !important;
   }
   .socials {
     grid-template-columns: 1fr 1fr;
@@ -669,7 +738,9 @@
     font-size: 15px;
   }
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
+  .mobile-sproject-wrapper {
+    height: 500px !important;
+  }
 }
 /* {=========== Footer start =======================} */

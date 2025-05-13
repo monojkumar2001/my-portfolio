@@ -15,7 +15,7 @@ function Header() {
       <header className="header-mobile" id="home">
         <div className="nav-left">
           <Link to="/">
-            <div className="nav-logo">
+            <div className="nav-mobile-logo">
               <img src="./images/logo.png" alt="" />
             </div>{" "}
           </Link>
