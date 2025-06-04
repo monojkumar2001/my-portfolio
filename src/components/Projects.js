@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 
@@ -23,13 +23,17 @@ const Projects = () => {
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
-            cssMode={true}
+            // cssMode={true}
             loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             speed={1000}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             navigation={{
-              prevEl: ".prev",
-              nextEl: ".next",
+              prevEl: ".prevs",
+              nextEl: ".nexts",
             }}
             breakpoints={{
               320: { slidesPerView: 1, spaceBetween: 10 },
@@ -39,7 +43,7 @@ const Projects = () => {
             }}
             className="project-wrapper"
           >
-            {projectData.map((item) => (
+            {[...projectData, ...projectData].map((item) => (
               <SwiperSlide key={item.key}>
                 <div className={item.projectItemClass}>
                   <div className="project-img">
@@ -90,10 +94,10 @@ const Projects = () => {
           </Swiper>
 
           <div className="custom-navigation">
-            <button className="prev">
+            <button className="prevs">
               <img src="./images/arrow-left.svg" alt="Previous" />
             </button>
-            <button className="next">
+            <button className="nexts">
               <img src="./images/arrow-right.svg" alt="Next" />
             </button>
           </div>
@@ -107,7 +111,7 @@ export default Projects;
 
 const projectData = [
   {
-    key: 0,
+    key: 1,
     projectItemClass: "project-item cummunity-item-1",
     projectImage: "./images/project-1.png",
     altText: "Full Stack Web Tech Services For NFT & Fintech Companies",
@@ -126,7 +130,7 @@ const projectData = [
     },
   },
   {
-    key: 1,
+    key: 2,
     projectItemClass: "project-item cummunity-item-2",
     projectImage: "./images/project-2.png",
     altText: "One Country, One Card",
@@ -148,7 +152,7 @@ const projectData = [
     },
   },
   {
-    key: 2,
+    key: 3,
     projectItemClass: "project-item cummunity-item-3",
     projectImage: "./images/project-3.png",
     altText: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
@@ -169,7 +173,7 @@ const projectData = [
     },
   },
   {
-    key: 3,
+    key: 4,
     projectItemClass: "project-item cummunity-item-4",
     projectImage: "./images/project-4.png",
     altText: "",
@@ -189,7 +193,7 @@ const projectData = [
     },
   },
   {
-    key: 4,
+    key: 5,
     projectItemClass: "project-item cummunity-item-1",
     projectImage: "./images/project-5.png",
     altText: "",
@@ -209,7 +213,7 @@ const projectData = [
     },
   },
   {
-    key: 5,
+    key: 6,
     projectItemClass: "project-item cummunity-item-1",
     projectImage: "./images/project-6.png",
     altText: "",
