@@ -257,7 +257,7 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             {/* =================== Projects start ========================= */}
-            <Projects />
+            <Projects projectData={projectData} />
             {/* =================== Projects end ========================= */}
           </SwiperSlide>
           <SwiperSlide>
@@ -459,7 +459,7 @@ function Home() {
         </section>
         {/* =================== virtual-office end ================== */}
         {/* =================== Remote job start ================== */}
-        <section className="mobile-remote" id="remote">
+        <section className="mobile-remote" id="skill">
           <div className="container">
             <div className="skill-wrapper">
               <div className="community-title">
@@ -587,11 +587,11 @@ function Home() {
         {/* =================== Remote job end ================== */}
 
         {/* =================== Project start ========================= */}
-        <MobileProjects />
+        <MobileProjects projectData={projectData} />
         {/* =================== Project end ========================= */}
 
         {/* ===================== Backer start ================== */}
-        <section className="mobile-backer">
+        <section className="mobile-backer" id="contact">
           <div className="container">
             <div className="backer-wrapper">
               <div className="backer-title">
@@ -709,62 +709,6 @@ function Home() {
           </div>
         </section>
         {/* ===================== Backer end ================== */}
-
-        {/* =========== Footer start ======================= */}
-        {/* <section className="mobile-footer">
-          <div className="mobile-footer-bg">
-            <img src="./images/footer-bg.png" alt="" />
-          </div>
-          <div className="mobile-footer-con">
-            <div className="socials">
-              <div className="social-list">
-                <a href="https://twitter.com/pentonium_ptm" target="_blank">
-                  <img src="./images/social-bg.png" alt="" />
-                  <div className="social-content">
-                    <img src="./images/twitter.png" alt="" />
-                    <p>Twitter</p>
-                  </div>
-                </a>
-              </div>
-              <div className="social-list">
-                <a href="" target="_blank">
-                  <img src="./images/social-bg.png" alt="" />
-                  <div className="social-content">
-                    <img src="./images/discord.png" alt="" />
-                    <p>Discord</p>
-                  </div>
-                </a>
-              </div>
-              <div className="social-list">
-                <a href="" target="_blank">
-                  <img src="./images/social-bg.png" alt="" />
-                  <div className="social-content">
-                    <img src="./images/telegram.png" alt="" />
-                    <p>Telegram</p>
-                  </div>
-                </a>
-              </div>
-              <div className="social-list">
-                <a href="https://pentonium.medium.com/" target="_blank">
-                  <img src="./images/social-bg.png" alt="" />
-                  <div className="social-content">
-                    <img src="./images/mediums.png" alt="" />
-                    <p>Medium</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="copyright">
-              <p>
-                © 2023 Hooked All Rights Reserved. All names, logos, images,and
-                brands are property of their respective owners. Non-Affiliation
-                and Disclaimer
-              </p>
-            </div>
-          </div>
-        </section> */}
-        {/* =========== Footer end ======================= */}
-        {/* ================ Mobile device  end =============== */}
       </div>
 
       {/*  */}
@@ -773,3 +717,128 @@ function Home() {
 }
 
 export default Home;
+
+const projectData = [
+  {
+    key: 1,
+    projectItemClass: "project-item cummunity-item-1",
+    projectImage: "./images/project-1.png",
+    altText: "Full Stack Web Tech Services For NFT & Fintech Companies",
+    projectTitle: "Full Stack Web Tech Services For NFT & Fintech Companies",
+    projectSkills: [
+      "Next.js 14",
+      "Tailwind CSS",
+      "TypeScript",
+      "Laravel",
+      "MySQL",
+      "RESTful APIs",
+    ],
+    projectLinks: {
+      githubLink: "https://github.com/monojkumar2001/nfes",
+      liveViewLink: "https://nfes.vercel.app/",
+    },
+  },
+  {
+    key: 2,
+    projectItemClass: "project-item cummunity-item-2",
+    projectImage: "./images/project-2.png",
+    altText: "One Country, One Card",
+    projectTitle:
+      "Smart Card Generator – One-Stop Solution for Dynamic QR Codes",
+    projectSkills: [
+      "Next Js",
+      "Tailwind CSS",
+      "NPM QR",
+      "Laravel",
+      "MySQL",
+      "JWT",
+      "RESTful APIs",
+    ],
+    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectLinks: {
+      githubLink: "/",
+      liveViewLink: "https://smartcardgenerator.net/",
+    },
+  },
+  {
+    key: 3,
+    projectItemClass: "project-item cummunity-item-3",
+    projectImage: "./images/project-3.png",
+    altText: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
+    projectTitle: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
+    projectSkills: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Laravel",
+      "RESTful APIs",
+      "Web3.js ",
+      "JWT",
+    ],
+    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectLinks: {
+      githubLink: "https://github.com/monojkumar2001/eas-nft-next",
+      liveViewLink: "https://www.easnft.com",
+    },
+  },
+  {
+    key: 4,
+    projectItemClass: "project-item cummunity-item-4",
+    projectImage: "./images/project-4.png",
+    altText: "",
+    projectTitle: "ORXS - Road to Redemption | NFT & Web3 Platform",
+    projectSkills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Framer Motion",
+      "Web3.js",
+    ],
+    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectLinks: {
+      githubLink: "https://github.com/monojkumar2001/orxs",
+      liveViewLink: "https://orxs.vercel.app",
+    },
+  },
+  {
+    key: 5,
+    projectItemClass: "project-item cummunity-item-1",
+    projectImage: "./images/project-5.png",
+    altText: "",
+    projectTitle: "MusicSphere - Ultimate Music Promotion Platform",
+    projectSkills: [
+      "Next.js",
+      "CSS",
+      "TypeScript",
+      "Laravel",
+      "MySQL",
+      "RESTful APIs",
+    ],
+    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectLinks: {
+      githubLink: "https://github.com/monojkumar2001/music_frontend",
+      liveViewLink: "https://ms-frontend-lovat.vercel.app/",
+    },
+  },
+  {
+    key: 6,
+    projectItemClass: "project-item cummunity-item-1",
+    projectImage: "./images/project-6.png",
+    altText: "",
+    projectTitle: "Discover, collect, and sell extraordinary NFTs",
+    projectSkills: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Laravel(PHP)",
+      "Web3.js ",
+      "Solidity",
+    ],
+    description: "Lorem Ipsum is simply dummy text of the printing",
+    projectLinks: {
+      githubLink: "https://github.com/monojkumar2001/red-marketplace",
+      liveViewLink: "https://red-marketplace.vercel.app/",
+    },
+  },
+];

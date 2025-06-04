@@ -4,9 +4,9 @@ import { Navigation } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 
-const MobileProjects = () => {
+const MobileProjects = ({ projectData }) => {
   return (
-    <section className="mobile-project">
+    <section className="mobile-project" id="projects">
       <div className="container">
         <div className=" mobile-project-wrapper">
           <div className="community-title">
@@ -25,7 +25,8 @@ const MobileProjects = () => {
               nextEl: ".next",
             }}
             breakpoints={{
-              320: { slidesPerView: 1, spaceBetween: 10 },
+              320: { slidesPerView: 1.1, spaceBetween: 15 },
+              400: { slidesPerView: 1.2, spaceBetween: 15 },
               768: { slidesPerView: 2, spaceBetween: 20 },
               1024: { slidesPerView: 3, spaceBetween: 30 },
               1300: { slidesPerView: 4, spaceBetween: 40 },
@@ -97,128 +98,3 @@ const MobileProjects = () => {
 };
 
 export default MobileProjects;
-
-const projectData = [
-  {
-    key: 0,
-    projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project-1.png",
-    altText: "Full Stack Web Tech Services For NFT & Fintech Companies",
-    projectTitle: "Full Stack Web Tech Services For NFT & Fintech Companies",
-    projectSkills: [
-      "Next.js 14",
-      "Tailwind CSS",
-      "TypeScript",
-      "Laravel",
-      "MySQL",
-      "RESTful APIs",
-    ],
-    projectLinks: {
-      githubLink: "https://github.com/monojkumar2001/nfes",
-      liveViewLink: "https://nfes.vercel.app/",
-    },
-  },
-  {
-    key: 1,
-    projectItemClass: "project-item cummunity-item-2",
-    projectImage: "./images/project-2.png",
-    altText: "One Country, One Card",
-    projectTitle:
-      "Smart Card Generator – One-Stop Solution for Dynamic QR Codes",
-    projectSkills: [
-      "Next Js",
-      "Tailwind CSS",
-      "NPM QR",
-      "Laravel",
-      "MySQL",
-      "JWT",
-      "RESTful APIs",
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "/",
-      liveViewLink: "https://smartcardgenerator.net/",
-    },
-  },
-  {
-    key: 2,
-    projectItemClass: "project-item cummunity-item-3",
-    projectImage: "./images/project-3.png",
-    altText: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
-    projectTitle: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
-    projectSkills: [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Laravel",
-      "RESTful APIs",
-      "Web3.js ",
-      "JWT",
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "https://github.com/monojkumar2001/eas-nft-next",
-      liveViewLink: "https://www.easnft.com",
-    },
-  },
-  {
-    key: 3,
-    projectItemClass: "project-item cummunity-item-4",
-    projectImage: "./images/project-4.png",
-    altText: "",
-    projectTitle: "ORXS - Road to Redemption | NFT & Web3 Platform",
-    projectSkills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Framer Motion",
-      "Web3.js",
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "https://github.com/monojkumar2001/orxs",
-      liveViewLink: "https://orxs.vercel.app",
-    },
-  },
-  {
-    key: 4,
-    projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project-5.png",
-    altText: "",
-    projectTitle: "MusicSphere - Ultimate Music Promotion Platform",
-    projectSkills: [
-      "Next.js",
-      "CSS",
-      "TypeScript",
-      "Laravel",
-      "MySQL",
-      "RESTful APIs",
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "https://github.com/monojkumar2001/music_frontend",
-      liveViewLink: "https://ms-frontend-lovat.vercel.app/",
-    },
-  },
-  {
-    key: 5,
-    projectItemClass: "project-item cummunity-item-1",
-    projectImage: "./images/project-6.png",
-    altText: "",
-    projectTitle: "Discover, collect, and sell extraordinary NFTs",
-    projectSkills: [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Laravel(PHP)",
-      "Web3.js ",
-      "Solidity",
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing",
-    projectLinks: {
-      githubLink: "https://github.com/monojkumar2001/red-marketplace",
-      liveViewLink: "https://red-marketplace.vercel.app/",
-    },
-  },
-];

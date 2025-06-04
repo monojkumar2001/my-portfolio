@@ -252,6 +252,11 @@
     overflow-x: hidden;
     padding: 150px 0 100px 0 !important;
   }
+
+  .mobile-sproject-wrapper .swiper-slide {
+    opacity: 1;
+    transform: inherit;
+  }
   .swiper-slide-active::before {
     content: "";
     top: 5px;
@@ -461,23 +466,25 @@
   .backer-img img {
     width: 80%;
   }
+  .header-mobile {
+    position: fixed;
+    background: #000;
+    padding: 15px 15px;
+    margin-top: 0;
+  }
+  .nav-mobile-logo {
+    position: initial;
+  }
+  .header-mobile .hum-btn {
+    position: initial;
+  }
 }
 @media only screen and (max-width: 992px) {
   .mobile-section-title {
     text-align: center;
     font-size: 40px;
   }
-  .nav-mobile-logo {
-    left: 30px;
-    top: 40px;
-    position: relative;
-  }
-  .header-mobile {
-    position: relative;
-  }
-  .header-mobile .hum-btn {
-    position: relative;
-  }
+
   .skill-item img {
     width: 100%;
   }
@@ -533,8 +540,8 @@
   }
   .custom-mobile-navigation button {
     background: linear-gradient(90deg, #6affb0 0%, #00ddff 52.43%);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
     border: none;
     padding: 10px;
@@ -614,7 +621,7 @@
 }
 @media only screen and (max-width: 768px) {
   .hero-mobile {
-    padding: 100px 0 50px 0 !important;
+    padding: 140px 0 50px 0 !important;
   }
   .skill-items {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -671,7 +678,7 @@
 }
 @media only screen and (max-width: 576px) {
   .hero-mobile {
-    padding: 100px 0 50px 0 !important;
+    padding: 140px 0 50px 0 !important;
   }
   .skill-items {
     grid-template-columns: 1fr 1fr 1fr;
@@ -701,7 +708,7 @@
     height: 560px !important;
   }
   .custom-mobile-navigation button img {
-    width: 15px;
+    width: 13px;
   }
 }
 
@@ -745,7 +752,7 @@
 }
 @media only screen and (max-width: 400px) {
   .mobile-sproject-wrapper {
-    height: 480px !important;
+    height: 460px !important;
   }
   .contact-content p {
     font-size: 14px;
