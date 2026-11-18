@@ -772,7 +772,6 @@ const projectData = [
       "Tailwind CSS",
       "TypeScript",
       "Laravel",
-      "MySQL",
       "AI",
       "Docker",
     ],
@@ -801,7 +800,7 @@ const projectData = [
     },
   },
   {
-    key: 4,
+    key: 5,
     projectItemClass: "project-item cummunity-item-4",
     projectImage: "./images/project-12.png",
     altText: "Nawshad Zamir – Professional Political & Personal Branding",
@@ -819,7 +818,7 @@ const projectData = [
     },
   },
   {
-    key: 5,
+    key: 6,
     projectItemClass: "project-item cummunity-item-5",
     projectImage: "./images/project-16.png",
     altText: "Travel – Modern Travel Booking & Tourism Platform",
@@ -831,7 +830,7 @@ const projectData = [
     },
   },
   {
-    key: 6,
+    key: 7,
     projectItemClass: "project-item cummunity-item-6",
     projectImage: "./images/project-1.png",
     altText: "Full Stack Web Tech Services For NFT & Fintech Companies",
@@ -850,7 +849,7 @@ const projectData = [
     },
   },
   {
-    key: 7,
+    key: 8,
     projectItemClass: "project-item cummunity-item-7",
     projectImage: "./images/project-2.png",
     altText: "One Country, One Card",
@@ -872,7 +871,7 @@ const projectData = [
     },
   },
   {
-    key: 8,
+    key: 9,
     projectItemClass: "project-item cummunity-item-8",
     projectImage: "./images/project-3.png",
     altText: "EAS NFT – A Cutting-Edge NFT Marketplace & Web3 Platform",
@@ -893,7 +892,7 @@ const projectData = [
     },
   },
   {
-    key: 4,
+    key: 10,
     projectItemClass: "project-item cummunity-item-4",
     projectImage: "./images/project-4.png",
     altText: "",
@@ -913,7 +912,7 @@ const projectData = [
     },
   },
   {
-    key: 5,
+    key: 11,
     projectItemClass: "project-item cummunity-item-1",
     projectImage: "./images/project-5.png",
     altText: "",
@@ -933,7 +932,7 @@ const projectData = [
     },
   },
   {
-    key: 6,
+    key: 12,
     projectItemClass: "project-item cummunity-item-1",
     projectImage: "./images/project-6.png",
     altText: "",
